@@ -37,7 +37,7 @@ function soma(a: number, b: number): number {
     return a + b;
 }
 ```
-## Aula 07: Interfaces e Tipagem Avançada
+# TypeScript - Aula 07: Interfaces e Tipagem Avançada
 ###Interfaces
 As interfaces definem contratos para objetos e classes.
 ```typescript
