@@ -38,7 +38,7 @@ function soma(a: number, b: number): number {
 }
 ```
 # TypeScript - Aula 07: Interfaces e Tipagem Avançada
-###Interfaces
+##Interfaces
 As interfaces definem contratos para objetos e classes.
 ```typescript
 interface Usuario {
@@ -50,7 +50,7 @@ interface Usuario {
 const usuario: Usuario = { nome: "João", idade: 30 };
  ```
 
-###Implementação de Interface em Classes
+##Implementação de Interface em Classes
 Uma classe implementando uma interface:
 ```typescript
 interface Pessoa {
@@ -71,7 +71,7 @@ class Estudante implements Pessoa {
 }
  ```
 
-###Tipos de Funções em Interfaces
+##Tipos de Funções em Interfaces
 Definindo funções dentro de uma interface:
 ```typescript
 interface Calculadora {
@@ -90,7 +90,7 @@ class Operacoes implements Calculadora {
 }
  ```
 
-###Union Types e Intersection Types
+##Union Types e Intersection Types
 
 - **Union Types: Permite que uma variável tenha mais de um tipo.**:
 ```typescript
@@ -113,7 +113,7 @@ type AnimalMamifero = Animal & Mamifero;
 
 const cachorro: AnimalMamifero = { nome: "Rex", temPelos: true };
  ```
-###Generics
+##Generics
 Funções genéricas permitem trabalhar com diferentes tipos sem perder a segurança da tipagem:
 ```typescript
 function retornarElemento<T>(elemento: T): T {
@@ -124,7 +124,7 @@ const numero = retornarElemento(123);  // tipo inferido como number
 const texto = retornarElemento("Olá Mundo");  // tipo inferido como string
  ```
 
-###Tipos Literais
+##Tipos Literais
 Permite especificar um valor exato para uma variável:
 ```typescript
 flet cor: "vermelho" | "verde" | "azul";
@@ -132,13 +132,13 @@ cor = "vermelho"; // Ok
 cor = "amarelo"; // Erro
  ```
 
-###Tipagem Avançada com Type Aliases
+##Tipagem Avançada com Type Aliases
 Criar nomes alternativos para tipos complexos:
 ```typescript
 type ID = string | number;
 const userId: ID = 123;  // ou "abc"
  ```
-## Conclusão
+# Conclusão
 
 Nas aulas de **Introdução ao TypeScript** (Aula 25) e **Interfaces e Tipagem Avançada** (Aula 07), aprendi conceitos que ajudam a criar códigos mais seguros e escaláveis. O TypeScript melhora o JavaScript ao adicionar tipagem estática, enquanto as interfaces e tipos avançados permitem um controle mais preciso dos dados, promovendo uma programação mais eficiente e confiável.
 
