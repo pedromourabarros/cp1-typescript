@@ -40,7 +40,7 @@ function soma(a: number, b: number): number {
 # TypeScript - Aula 07: Interfaces e Tipagem Avançada
 ##Interfaces
 As interfaces definem contratos para objetos e classes.
-    ```typescript
+```typescript
     interface Usuario {
         nome: string;
         idade: number;
@@ -48,7 +48,7 @@ As interfaces definem contratos para objetos e classes.
     }
 
     const usuario: Usuario = { nome: "João", idade: 30 };
-     ```
+```
 
 ##Implementação de Interface em Classes
 Uma classe implementando uma interface:
