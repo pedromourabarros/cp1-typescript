@@ -37,3 +37,5 @@ function soma(a: number, b: number): number {
     return a + b;
 }
 
+## Aula 07: Interfaces e Tipagem Avançada
+###Interfaces
